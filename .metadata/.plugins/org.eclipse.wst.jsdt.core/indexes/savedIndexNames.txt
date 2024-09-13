@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\LiteraryLoop\Literaryloop\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2779629487.index
+537222796.index
+4138365218.index
+2712437970.index
+2882713946.index
+4208508501.index

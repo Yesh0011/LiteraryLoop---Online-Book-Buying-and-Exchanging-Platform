@@ -1,0 +1,304 @@
+@charset "ISO-8859-1";
+:root {
+    --color-primary: #2B124C;
+    --color-dark: #190019;
+    --color-secondary: #822B5B; 
+    --color-tertiary: #854F8C;
+    --color-neutral1: #dfb6b2;
+    --color-neutral2: #fbe4d8;   
+    
+  }
+  
+ /* my edits start*/
+ 
+ *{
+	 margin: 0;
+	 padding:0;
+	 box-sizing: border-box;
+	 font-family: 'Popins',sans-serif;
+ }
+ 
+ .header2{
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 padding: 20px 100px;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 z-index: 99;
+	 
+	 
+ }
+ 
+ 
+ 
+ .navigation a{
+	 position: relative;
+	 font-size: 1.1em;
+	 text-decoration: none;
+	 font-weight: 500;
+	 margin-left: 40px;
+ }
+ 
+ .navigation a::after{
+	 content: '';
+	 position: absolute;
+	 left: 0;
+	 bottom: -6px;
+	 width: 100%;
+	 background: white;
+	 border-radius: 5px;
+	 transform-origin: right;
+	 transform: scaleX(0);
+	 transition: transform .5s;
+ }
+ 
+ .navigation .a:hover::after{
+	 transform: scaleX(1);
+	 transform-origin: left;
+ }
+ .loginbody{
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 min-height: 100vh;
+	 background: url(Images/loginbackgroundimg.jpg) no-repeat;
+	 background-size: cover;
+	 background-position: center;
+ }
+ 
+ .profilebody{
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 min-height: 100vh;
+	 background: url(Images/progileback.png) no-repeat;
+	 background-size: cover;
+	 background-position: center;
+ }
+
+ .wrapper{
+	 width: 100%;
+	 background: transparent;
+	 border: 2px solid ;
+	 color: white;
+	 border-radius: 10px;
+	 padding: 30px 40px;
+	 max-width: 800px;
+	 
+	 
+ }
+ 
+ 
+ 
+ .wrapper h1{
+	 font-size: 36px;
+	 text-align: center;
+	 
+ } 
+ 
+ 
+ .wrapper .input-box{
+	 position: relative;
+	 width:70%;
+	 height: 50px;
+	 margin: 20px 0;
+ }
+ 
+ .input-row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+ 
+ .input-box input{
+	 width:100%;
+	 height: 100%;
+	 background: transparent;
+	 border: none;
+	 outline: none;
+	 border: 2px solid rgba(255,255,255,.2);
+	 border-radius: 40px;
+	 font-size: 16px;
+	 color : white;
+	 margin-right: 10px;
+     
+	 
+ }
+ 
+ .lable{
+	 width:100%;
+	 height: 100%;
+	 background: transparent;
+	 border: none;
+	 outline: none;
+	 border: 2px solid rgba(255,255,255,.2);
+	 border-radius: 40px;
+	 font-size: 16px;
+	 color : white;
+	 margin-right: 10px;
+	 
+	 
+	 	 
+ }
+ 
+ .lablefix{
+	 margin: 20px 0;
+ }
+ 
+ .wrapper .lable{
+	 position: relative;
+	 width:500px;
+	 height: 50px;
+	 margin: 20px 0;
+	 
+ }
+ 
+ option{
+	 width: 800px;
+ }
+ 
+ .input-box input::placeholder{
+	 color:white;
+	 margin-right: 10px;
+	 
+ }
+ 
+ .input-box i{
+	 position: absolute;
+	 right:20px;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 font-size: 30px;
+	 
+ }
+ 
+ .wrapper .remember-forgot{
+	 display: flex;
+	 justify-content: space-between;
+	 font-size: 14.5px;
+	 margin:-15px 0 15px ;
+	  
+ }
+ 
+ .remember-forgot label input{
+	 accent-color: #fff;
+	 margin-right: 3px;
+ }
+ 
+ 
+ .remember-forgot{
+	 color: white;
+	 text-decoration: none;
+	 
+ }
+ 
+ .remember-forgot a:hover{
+	 text-decoration: underline;
+ }
+ 
+ .wrapper .btn {
+	 width: 50%;
+	 height: 45px;
+	 background: white;
+	 border: none;
+	 outline: none;
+	 border-radius: 40px;
+	 box-shadow: 0 0 10px rgba(0,0,0,.1);
+	 cursor: pointer;
+	 font-size: 16px;
+	 color: #333;
+	 font-weight: 600;
+	 
+	
+ }
+ 
+ input[type="text"] {
+        
+        text-indent: 10px; /* Adjust the text-indent to start the cursor after the corner */
+    }
+ 
+ input[type="password"] {
+        
+        text-indent: 10px; /* Adjust the text-indent to start the cursor after the corner */
+    }
+ .wrapper .register-link{
+	 font-size: 14.5px;
+	 text-align: center;
+	 margin-top: 20px 0 15px;
+ }
+ 
+ .register-link p,a{
+	 color: #fff;
+	 text-decoration: none;
+	 font-weight: 600;
+	 
+ }
+ 
+ .register-link p.a:hover{
+	 
+	 text-decoration: underline;
+	 
+	 
+ }
+ 
+  .styled-table2 {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 700px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+
+.styled-table2 th,
+.styled-table2 td {
+    padding: 12px 15px;
+}
+
+.styled-table2 tbody tr {
+    border-bottom: 1px solid transparent;
+}
+
+.styled-table2 tbody tr:nth-of-type(even) {
+    background-color: whitesmoke;
+    fill-opacity: .4;
+    
+}
+
+.styled-table2 tbody tr:last-of-type {
+    border-bottom: 2px solid #854F8C;
+    border-radius: 20px;
+}
+
+.styled-table2 tbody tr.active-row {
+    font-weight: bold;
+    color: #2B124C;
+}
+
+ select {
+        appearance: none; /* Remove default styling */
+        padding: 5px 30px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        background-color: #fff;
+        color: #333;
+        font-size: 16px;
+        cursor: pointer;
+        
+        margin-left: 120px;
+    }
+
+    /* Style for the dropdown arrow icon */
+    .select-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    
